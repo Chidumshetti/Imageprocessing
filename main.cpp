@@ -2,13 +2,13 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Hello GG" << std::endl;
-
     std::string imagePath;
+     int k;
     std::cout << "Enter image path: ";
     std::cin >> imagePath;
-
     getImage(imagePath);    
-    rotateImage(imagePath,1);
+    std::cout << "Enter angle of rotation: ";
+    std::cin>>k;
+    rotateImage(imagePath,k);
     return 0;
 }
